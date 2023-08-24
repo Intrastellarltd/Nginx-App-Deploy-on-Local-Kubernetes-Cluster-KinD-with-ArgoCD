@@ -62,7 +62,7 @@ k get all -n argocd
 
 ### Change the service type of "argocd-server" from "ClusterIP" to LoadBalancer
 
-For the argocd to utilize Metallb, we have to change the service type of "argocd-server" service from "ClusterIP" to "LoadBalancer"
+For the argocd to utilize Metallb, the service type of "argocd-server" service has to be changed from "ClusterIP" to "LoadBalancer".
 
 ```shell
 k edit service argocd-server -n argocd
@@ -72,7 +72,7 @@ k edit service argocd-server -n argocd
 k get all -n argocd
 ```
 
-**Now we see that the service type of "argocd-server" service has been changed from "ClusterIP" to "LoadBalancer".**
+**Now the service type of "argocd-server" service has been changed from "ClusterIP" to "LoadBalancer".**
 
 ---
 
